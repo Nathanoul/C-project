@@ -1,6 +1,4 @@
-cmake_minimum_required(VERSION 3.20)
-project(matmod21)
-
-set(CMAKE_CXX_STANDARD 14)
-
+cmake_minimum_required(VERSION 3.7)
+project(homework)
+set(CXX_STANDARD 14)
 add_subdirectory(homework1)

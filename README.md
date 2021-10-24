@@ -1,1 +1,1 @@
-# C-project
+Variant #1
