@@ -35,7 +35,7 @@ int main()
     int direct = 1;
     int end = 0;
     int k = 1;     
-    float A = -9.8/(2*vx_0*vx_0);
+    float A = -9.81/(2*vx_0*vx_0);
     float B = vy_0/vx_0;
     float C = h_arr[0];
     float y = A*x_arr[1]*x_arr[1]+ B*x_arr[1] + C;
