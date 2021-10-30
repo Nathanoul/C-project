@@ -35,19 +35,16 @@ int main()
     int direct = 1;
     int end = 0;
     int k = 1;     
-    float A = -9.81/(2*vx_0*vx_0);
+    float A = -9.8/(2*vx_0*vx_0);
     float B = vy_0/vx_0;
     float C = h_arr[0];
     float y = A*x_arr[1]*x_arr[1]+ B*x_arr[1] + C;
 
     while(!end)
     {
-        if( (y <= h_arr[k]) || (k == 0) )
+        if( (y <= h_arr[k]) || (k == 0) || (k > x_arr.size()-1))
         {   
-            cout << "hit " << k << std::endl;
-            cout << "y= " << y << std::endl;
-
-            if( (y <= 0) || (k == 0) )
+            if( (y <= 0) || (k == 0) || (k > x_arr.size()-1))
             {
                 end = 1;
                 if(direct == 1)
@@ -58,6 +55,11 @@ int main()
                 {
                     cout << "End " << k << std::endl;
                 }
+            } 
+            else
+            {
+                cout << "hit " << k << std::endl;
+                cout << "y= " << y << std::endl;
             }
 
             if(direct == 1)
@@ -75,9 +77,7 @@ int main()
                 C = -4*A*x_arr[k]*x_arr[k] - 2*B*x_arr[k] + C;
                 y = A*x_arr[k+1]*x_arr[k+1] + B*x_arr[k+1] + C; 
                 k++;
-            }
-
-               
+            }  
         } 
         else
         {
