@@ -56,11 +56,6 @@ int main()
                     cout << "End " << k << std::endl;
                 }
             } 
-            else
-            {
-                cout << "hit " << k << std::endl;
-                cout << "y= " << y << std::endl;
-            }
 
             if(direct == 1)
             {
@@ -81,10 +76,8 @@ int main()
         } 
         else
         {
-            cout << "passed " << k << std::endl;
             if(direct == 1)
             {k++;} else {k--;}
-            cout << "y= " << y << std::endl;
 
             y = A*x_arr[k]*x_arr[k] + B*x_arr[k] + C;
         }    
