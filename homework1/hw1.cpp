@@ -28,7 +28,7 @@ int main()
     {
         in >> x_n >> y_n;
 
-        if ( x_0 != 0 && y_0 != 0)
+        if ( x_n != 0 && y_n != 0)
         {
             if ( (cos_l > (x_0*x_n + y_n*y_0)/sqrt((x_0*x_0 + y_0*y_0)*(x_n*x_n + y_n*y_n))) && (x_n*y_0 - y_n*x_0 <= 0) ) 
             {
