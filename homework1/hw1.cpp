@@ -37,7 +37,7 @@ int main()
                 y_obtuse_l = y_n;
             }
 
-            if ( (cos_r > (x_0*x_n + y_n*y_0)/sqrt((x_0*x_0 + y_0*y_0)*(x_n*x_n + y_n*y_n))) && (x_n*y_0 - y_n*x_0 >= 0) )
+            if ( (cos_r > (x_0*x_n + y_n*y_0)/sqrt((x_0*x_0 + y_0*y_0)*(x_n*x_n + y_n*y_n))) && (x_n*y_0 - y_n*x_0 > 0) )
             {
                 cos_r = (x_0*x_n + y_n*y_0)/sqrt((x_0*x_0 + y_0*y_0)*(x_n*x_n + y_n*y_n));
                 x_obtuse_r = x_n;
