@@ -49,13 +49,14 @@ int main()
                 end = 1;
                 if(direct == 1)
                 {
-                    cout << "End " << k-1 << std::endl;
+                    cout << k-1 << std::endl;
                 } 
                 else 
                 {
-                    cout << "End " << k << std::endl;
+                    cout << k << std::endl;
                 }
             } 
+
 
             if(direct == 1)
             {
