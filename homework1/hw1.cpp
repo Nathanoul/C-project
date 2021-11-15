@@ -46,8 +46,8 @@ int main()
         } 
     }
      
-    cout << "rightmost: " << x_obtuse_r << " " << y_obtuse_r << std::endl;
-    cout << "leftmost: " << x_obtuse_l << " " << y_obtuse_l << std::endl;
+    cout << "Rightmost: " << x_obtuse_r << " " << y_obtuse_r << std::endl;
+    cout << "Leftmost: " << x_obtuse_l << " " << y_obtuse_l << std::endl;
     return 0;
 }
    
