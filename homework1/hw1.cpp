@@ -9,20 +9,20 @@ int main()
 {
     ifstream in("in.txt"); 
 
-    float x_0 = 0;
-    float y_0 = 0;
+    double x_0 = 0;
+    double y_0 = 0;
     in >> x_0 >> y_0;
 
-    float x_n = 0;
-    float y_n = 0;
+    double x_n = 0;
+    double y_n = 0;
 
-    float x_obtuse_l = x_0;
-    float y_obtuse_l = y_0;
-    float x_obtuse_r = x_0;
-    float y_obtuse_r = y_0;
+    double x_obtuse_l = x_0;
+    double y_obtuse_l = y_0;
+    double x_obtuse_r = x_0;
+    double y_obtuse_r = y_0;
 
-    float cos_l = 1;
-    float cos_r = 1;
+    double cos_l = 1;
+    double cos_r = 1;
 
     while(in)
     {
