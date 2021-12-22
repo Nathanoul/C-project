@@ -32,7 +32,6 @@ int main()
 
         if ( x_n*x_n + y_n*y_n != 0)
         {
-            cout << x_n << " " << y_n << std::endl; 
             cos = (x_0*x_n + y_n*y_0)/sqrt((x_0*x_0 + y_0*y_0)*(x_n*x_n + y_n*y_n));
             if ( ( ((abs(cos_l - cos) > eps) && (cos_l > cos)) || (abs(x_obtuse_l*y_n - x_n*y_obtuse_l) < eps) ) && (x_n*y_0 - y_n*x_0 < 0) )
             {
