@@ -17,10 +17,10 @@ int main()
     double x_n = 0;
     double y_n = 0;
 
-    double x_obtuse_l = 99;
-    double y_obtuse_l = 1;
-    double x_obtuse_r = 1;
-    double y_obtuse_r = 99;
+    double x_obtuse_l = 0;
+    double y_obtuse_l = 0;
+    double x_obtuse_r = 0;
+    double y_obtuse_r = 0;
 
     double cos_l = 1;
     double cos_r = 1;
