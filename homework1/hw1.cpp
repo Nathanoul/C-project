@@ -8,7 +8,7 @@ using namespace std;
 int main()
 {
     ifstream in("in.txt"); 
-    const double eps = 1e-15;
+    const double eps = 1e-10;
 
     double x_0 = 0;
     double y_0 = 0;
