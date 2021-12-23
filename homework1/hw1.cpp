@@ -35,14 +35,14 @@ int main()
             cos = (x_0*x_n + y_n*y_0)/sqrt((x_0*x_0 + y_0*y_0)*(x_n*x_n + y_n*y_n));
             if ( ( ((abs(cos_l - cos) > eps) && (cos_l > cos)) || (abs(x_obtuse_l*y_n - x_n*y_obtuse_l) < eps) ) && (x_n*y_0 - y_n*x_0 < 0) )
             {
-                cos_l = (x_0*x_n + y_n*y_0)/sqrt((x_0*x_0 + y_0*y_0)*(x_n*x_n + y_n*y_n));
+                cos_l = cos;
                 x_obtuse_l = x_n;
                 y_obtuse_l = y_n;
             }
 
             if ( ( ((abs(cos_r - cos) > eps) && (cos_r > cos)) || (abs(x_obtuse_r*y_n - x_n*y_obtuse_r) < eps) ) && (x_n*y_0 - y_n*x_0 >= 0) ) 
             {
-                cos_r = (x_0*x_n + y_n*y_0)/sqrt((x_0*x_0 + y_0*y_0)*(x_n*x_n + y_n*y_n));
+                cos_r = cos;
                 x_obtuse_r = x_n;
                 y_obtuse_r = y_n;
             }
