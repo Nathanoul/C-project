@@ -6,10 +6,8 @@
 
 using namespace std;
 
-int main()
+int main(int argc, char **argv)
 {
-
-    ifstream in("in.txt"); 
 
     float h_0 = 0;
     in >> h_0;
