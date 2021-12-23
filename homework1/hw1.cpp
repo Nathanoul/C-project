@@ -40,7 +40,7 @@ int main()
                 y_obtuse_l = y_n;
             }
 
-            if ( ( (cos_r > cos) || (abs(x_obtuse_r*y_n - x_n*y_obtuse_r) < eps) ) && (x_n*y_0 - y_n*x_0 >= 0) ) 
+            if ( ( (cos_r > cos) || (abs(x_obtuse_r*y_n - x_n*y_obtuse_r) < eps) ) && ( (x_n*y_0 - y_n*x_0 >= 0) || (abs(x_n*y_0 - y_n*x_0) < eps) ) )
             {
                 cos_r = cos;
                 x_obtuse_r = x_n;
