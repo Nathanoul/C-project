@@ -10,13 +10,11 @@ int main(int argc, char **argv)
 {
     
     std::string filename;
-	std::vector<Vector> barriers;
-
-	if (argc == 2) {
-		filename = argv[1];
-	} else {
-		return -1;
-	}
+    if (argc == 2) {
+	filename = argv[1];
+    } else {
+	return -1;
+    }
     ifstream in(filename);
 
     float h_0 = 0;
